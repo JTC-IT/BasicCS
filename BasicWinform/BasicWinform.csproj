@@ -56,7 +56,6 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
     <Reference Include="System.Drawing" />
@@ -71,6 +70,8 @@
     <Compile Include="Calculator.Designer.cs">
       <DependentUpon>Calculator.cs</DependentUpon>
     </Compile>
+    <Compile Include="Entities\CapHoc.cs" />
+    <Compile Include="Entities\Student.cs" />
     <Compile Include="frmSinhVien.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -92,6 +93,14 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="Properties\DataSources\BasicWinform.Entities.CapHoc+HK.datasource" />
+    <None Include="Properties\DataSources\BasicWinform.Entities.CapHoc.datasource" />
+    <None Include="Properties\DataSources\BasicWinform.Entities.Student+Sex.datasource" />
+    <None Include="Properties\DataSources\BasicWinform.Properties.Resources.datasource" />
+    <None Include="Properties\DataSources\BasicWinform.Properties.Settings.datasource" />
+    <None Include="Properties\DataSources\BisicWinform.Calculator.datasource" />
+    <None Include="Properties\DataSources\BisicWinform.frmSinhVien.datasource" />
+    <None Include="Properties\DataSources\BisicWinform.Program.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -119,6 +128,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\ttc.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BasicCS\BasicCS.csproj">
+      <Project>{f2997bb8-3a9d-498f-8e75-489f6c16d9f1}</Project>
+      <Name>BasicCS</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

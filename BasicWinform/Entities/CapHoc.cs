@@ -8,7 +8,7 @@ namespace BasicWinform.Entities
 {
     public class CapHoc
     {
-        public string Cap { get; set; }
+        public string tenCap { get; set; }
         public string School { get; set; }
         public float Diem { get; set; }
         public HK HanhKiem { get; set; }
