@@ -18,7 +18,7 @@ namespace BasicWinform
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmSinhVien(getStudent(1)));
+            Application.Run(new frmListSv(getListStudents()));
         }
         
         /// <summary>

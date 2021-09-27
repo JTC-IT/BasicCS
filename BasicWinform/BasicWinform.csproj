@@ -72,6 +72,12 @@
     </Compile>
     <Compile Include="Entities\CapHoc.cs" />
     <Compile Include="Entities\Student.cs" />
+    <Compile Include="frmListSv.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmListSv.Designer.cs">
+      <DependentUpon>frmListSv.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmSinhVien.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -80,22 +86,20 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmListSv.resx">
+      <DependentUpon>frmListSv.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmSinhVien.resx">
       <DependentUpon>frmSinhVien.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <None Include="Properties\DataSources\BasicWinform.Entities.CapHoc+HK.datasource" />
     <None Include="Properties\DataSources\BasicWinform.Entities.CapHoc.datasource" />
     <None Include="Properties\DataSources\BasicWinform.Entities.Student+Sex.datasource" />
+    <None Include="Properties\DataSources\BasicWinform.Entities.Student.datasource" />
     <None Include="Properties\DataSources\BasicWinform.Properties.Resources.datasource" />
     <None Include="Properties\DataSources\BasicWinform.Properties.Settings.datasource" />
     <None Include="Properties\DataSources\BisicWinform.Calculator.datasource" />
@@ -105,6 +109,11 @@
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
@@ -127,13 +136,20 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\ttc.jpg" />
-  </ItemGroup>
-  <ItemGroup>
     <ProjectReference Include="..\BasicCS\BasicCS.csproj">
       <Project>{f2997bb8-3a9d-498f-8e75-489f6c16d9f1}</Project>
       <Name>BasicCS</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="icons\add_32px.png" />
+    <Content Include="icons\color_wheel_32.png" />
+    <None Include="icons\add_avata-50.png" />
+    <None Include="icons\remove-32.png" />
+    <None Include="icons\edit-32 %282%29.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

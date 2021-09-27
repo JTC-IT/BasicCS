@@ -33,5 +33,25 @@ namespace BisicWinform
             capHocBindingSource.DataSource = history;
             girdHistory.DataSource = capHocBindingSource;
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog fileDialog = new OpenFileDialog();
+            fileDialog.Filter = "File ảnh(*.png, *.jpg)|*.png; *.jpg";
+            fileDialog.Title = "Chọn ảnh chân dung";
+            if(fileDialog.ShowDialog() == DialogResult.OK)
+            {
+                pictureAvata.ImageLocation = fileDialog.FileName;
+            }
+        }
+
+        private void btnChooseBgColor_Click(object sender, EventArgs e)
+        {
+            ColorDialog colorDialog = new ColorDialog();
+            if(colorDialog.ShowDialog() == DialogResult.OK)
+            {
+                this.BackColor = colorDialog.Color;
+            }
+        }
     }
 }
