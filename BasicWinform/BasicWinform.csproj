@@ -71,12 +71,19 @@
       <DependentUpon>Calculator.cs</DependentUpon>
     </Compile>
     <Compile Include="Entities\CapHoc.cs" />
+    <Compile Include="Entities\Faculty.cs" />
     <Compile Include="Entities\Student.cs" />
     <Compile Include="frmListSv.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmListSv.Designer.cs">
       <DependentUpon>frmListSv.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLop.Designer.cs">
+      <DependentUpon>frmLop.cs</DependentUpon>
     </Compile>
     <Compile Include="frmSinhVien.cs">
       <SubType>Form</SubType>
@@ -88,6 +95,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frmListSv.resx">
       <DependentUpon>frmListSv.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLop.resx">
+      <DependentUpon>frmLop.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmSinhVien.resx">
       <DependentUpon>frmSinhVien.cs</DependentUpon>
