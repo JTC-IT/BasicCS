@@ -72,7 +72,14 @@
     </Compile>
     <Compile Include="Entities\CapHoc.cs" />
     <Compile Include="Entities\Faculty.cs" />
+    <Compile Include="Entities\MySound.cs" />
     <Compile Include="Entities\Student.cs" />
+    <Compile Include="frmCountDown.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCountDown.Designer.cs">
+      <DependentUpon>frmCountDown.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmListSv.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -91,8 +98,23 @@
     <Compile Include="frmSinhVien.Designer.cs">
       <DependentUpon>frmSinhVien.cs</DependentUpon>
     </Compile>
+    <Compile Include="happyNewYear.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="happyNewYear.Designer.cs">
+      <DependentUpon>happyNewYear.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Timemer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Timemer.Designer.cs">
+      <DependentUpon>Timemer.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="frmCountDown.resx">
+      <DependentUpon>frmCountDown.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmListSv.resx">
       <DependentUpon>frmListSv.cs</DependentUpon>
     </EmbeddedResource>
@@ -102,9 +124,15 @@
     <EmbeddedResource Include="frmSinhVien.resx">
       <DependentUpon>frmSinhVien.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="happyNewYear.resx">
+      <DependentUpon>happyNewYear.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Timemer.resx">
+      <DependentUpon>Timemer.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\DataSources\BasicWinform.Entities.CapHoc+HK.datasource" />
     <None Include="Properties\DataSources\BasicWinform.Entities.CapHoc.datasource" />
@@ -152,11 +180,33 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Resources\" />
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
   </ItemGroup>
   <ItemGroup>
     <Content Include="icons\add_32px.png" />
     <Content Include="icons\color_wheel_32.png" />
+    <None Include="Resources\down.png" />
+    <None Include="Resources\ny-144.gif" />
+    <None Include="Resources\newyear2.gif" />
+    <None Include="Resources\Happy-New-Year.gif" />
+    <None Include="Resources\hcm.jpg" />
+    <None Include="Resources\sgcity.jpg" />
     <None Include="icons\add_avata-50.png" />
     <None Include="icons\remove-32.png" />
     <None Include="icons\edit-32 %282%29.png" />
