@@ -261,16 +261,16 @@ namespace BasicWinform
             // 
             // lblTimer
             // 
-            this.lblTimer.Font = new System.Drawing.Font("SVN-Revolution", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTimer.Font = new System.Drawing.Font("SVN-Kimberley", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTimer.ForeColor = System.Drawing.Color.Aqua;
             this.lblTimer.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.lblTimer.Location = new System.Drawing.Point(202, 537);
-            this.lblTimer.MinimumSize = new System.Drawing.Size(639, 105);
+            this.lblTimer.Location = new System.Drawing.Point(210, 527);
+            this.lblTimer.MinimumSize = new System.Drawing.Size(600, 105);
             this.lblTimer.Name = "lblTimer";
-            this.lblTimer.Size = new System.Drawing.Size(639, 105);
+            this.lblTimer.Size = new System.Drawing.Size(642, 159);
             this.lblTimer.TabIndex = 2;
-            this.lblTimer.Text = "999 Ngày 22:20";
-            this.lblTimer.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblTimer.Text = "109d  22:20";
+            this.lblTimer.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // timer
             // 

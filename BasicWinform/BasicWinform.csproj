@@ -112,6 +112,12 @@
     <Compile Include="Timemer.Designer.cs">
       <DependentUpon>Timemer.cs</DependentUpon>
     </Compile>
+    <Compile Include="TreeViewApp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TreeViewApp.Designer.cs">
+      <DependentUpon>TreeViewApp.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="frmCountDown.resx">
       <DependentUpon>frmCountDown.cs</DependentUpon>
     </EmbeddedResource>
@@ -133,6 +139,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Timemer.resx">
       <DependentUpon>Timemer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TreeViewApp.resx">
+      <DependentUpon>TreeViewApp.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\DataSources\BasicWinform.Entities.CapHoc+HK.datasource" />
     <None Include="Properties\DataSources\BasicWinform.Entities.CapHoc.datasource" />
@@ -201,6 +210,7 @@
   <ItemGroup>
     <Content Include="icons\add_32px.png" />
     <Content Include="icons\color_wheel_32.png" />
+    <None Include="Resources\loading.gif" />
     <None Include="Resources\down.png" />
     <None Include="Resources\ny-144.gif" />
     <None Include="Resources\newyear2.gif" />

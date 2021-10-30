@@ -1,11 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using BasicWinform.Entities;
 
@@ -82,7 +76,7 @@ namespace BasicWinform
             if(span.TotalSeconds >= 0)
             {
                 lblTimerS.Text = $"{span.Seconds}";
-                lblTimer.Text = $"{span.Days:0#} Ngày {span.Hours:0#}:{span.Minutes:0#}";
+                lblTimer.Text = $"{span.Days:0#}d  {span.Hours:0#}:{span.Minutes:0#}";
                 if(span.TotalSeconds < 25)
                 {
                     if(span.Seconds == 19)
@@ -93,7 +87,7 @@ namespace BasicWinform
             }
             else
             {
-                lblTimer.Text = "00 Ngày 00:00";
+                lblTimer.Text = "00d 00:00";
                 lblTimerS.Text = "00";
             }
         }
